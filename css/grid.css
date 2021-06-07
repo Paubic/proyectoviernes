@@ -16,8 +16,8 @@ body{
 header{
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns:  10% 30% 50% 10%;
+    grid-template-rows: 0px repeat(3, 1fr);
     
 }
 
@@ -30,87 +30,42 @@ header{
     grid-row: 1/5;
     
 }
-nav, h1, h3, h5, .boton, .texto{
+nav{
 
-    grid-column: 1/5;
-    grid-row: 1/5;
-    font-family: sans-serif;
-}
-
-.menu{
-
-    justify-self: center;
-    margin: 40px;
-    
-
-}
-a{
-    margin: 20px;
-    
-   
-   
-}
-
-.menu__galeria{
-    color:  white;
-}
-
-.menu__productos{
-
-    color:  white;
-}
-
-.menu__contactar{
-
-    color:  white;
-}
-
-.menu__servicios{
-
-    background-color: orange;
-    color:  white;
-    
-    
-}
-h1{
-
-    display: flex;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    display:flex;
+    justify-content:space-between;
     align-items: center;
-    padding: 40px;
-    color:  white;
+    margin: 20px;
+    font-family: sans-serif;
+    color: white;
     
 }
 
-.texto{
-
-    color:  white;
-    grid-column: 1/2;
-    grid-row: 3/4;
-    margin: 40px;
-    
-    
-    
-}
-
-h5{
-    padding: 20px;
-    color:  white;
-    grid-column: 4/5;
-    
-}
-
-h3{
-
-    color:  white;
-    grid-column: 2/3;
-    padding: 20px;
-}
-.boton{
+.menu__barraMenu{
 
     display: grid;
-    grid-column: 1/2;
-    grid-row: 4;
-    color:  white;
+    grid-auto-columns: auto;
+    grid-auto-flow: column;
+    grid-column-gap: 1,25rem;
+    color: white;
+    
+}
+
+.bloque{
+
+grid-column: 2/3;
+grid-row: 3/4;
+font-family: sans-serif;
+}
+
+.bloque__boton{
+
     background-color: orange;
-    margin: 60px;
+    color: black;
+    font-size: 1rem;
+    padding: 10px 40px;
+    border-radius: 5px;
+    
 }
